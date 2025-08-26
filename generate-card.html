@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bingo Game</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <script src="game.js"></script>
+  
+  <div class="home-button">
+    <button onclick="goHome()">Home</button>
+  </div>
+
+
+  <div class="game-container">
+    <h2>Next Number:</h2>
+    <div id="number-display">--</div>
+
+    <div class="boards">
+      <div id="board1" class="bingo-board"></div>
+    </div>
+
+    <div class="controls">
+      <button onclick="callNextNumber()">Call Next Number</button>
+      <button onclick="generateAllBoards()">Generate New Card</button>
+    </div>
+  </div>
+
+  <div id="winner-overlay" class="overlay" style="display: none;">
+    <div id="winner-text">Bingo! You win!</div>
+    <div class="overlay-buttons">
+      <button onclick="goHome()">Go to Home</button>
+      <button onclick="restartGame()">Play Again</button>
+    </div>
+  </div>
+</body>
+</html>
+
